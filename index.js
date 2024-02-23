@@ -90,11 +90,11 @@ Pomocí voláni metody classList.toggle přidejte na tento element třídu text-
 Vyzkoušejte si, že když tuto metodu zavoláte znova, třída se z prvku odstraní. Takto můžete přepínat mezi přidáním a odebráním třídy pomocí opakovaného volání této metody.
 Na konci by stránka v prohlížeči měla vypadat jako na obrázku níže: */
 
-karta1 = document.querySelector("#product1")
-karta1.classlist.add("border-primary")
+const karta1 = document.querySelector("#product1")
+karta1.classList.add("border-primary")
 
-tlacitko = document.querySelector("#product2 button") //tohle je blbe porad
-tlacitko.classlist.remove("btn-primary")
+const tlacitko = document.querySelector("#product2 button") //tohle je blbe porad
+tlacitko.classList.remove("btn-primary")
 
-nazev3 = document.querySelector(".card-title")
-nazev3.classList.toggle = ("text-center")
+const nazev3 = document.querySelector(".card-title")
+nazev3.classList.toggle("text-center")
